@@ -1,7 +1,7 @@
 import TelegramBot from 'node-telegram-bot-api';
 import {Game} from "./game.js";
 
-const bot = new TelegramBot("6997825825:AAH2jZXXkUoeYYUHt-ZPw-XGLoQLWhdf2Wg", {
+const bot = new TelegramBot(process.env.API_KEY_BOT, {
 	polling: {
 		interval: 300,
 		autoStart: true

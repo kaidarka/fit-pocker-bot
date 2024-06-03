@@ -39,7 +39,6 @@ export class Game {
 
 		this.bot.on('callback_query', async ctx => {
 			try {
-				console.log(ctx)
 				if (ctx.data.startsWith('/restart')) {
 					if (Object.keys(this.votes).length) {
 						await this.restartGame(ctx, msg);
