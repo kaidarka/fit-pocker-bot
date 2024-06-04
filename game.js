@@ -1,5 +1,3 @@
-import {newGame} from "./index.js";
-
 export class Game {
 	members;
 	bot;
@@ -56,8 +54,8 @@ export class Game {
 						this.votes[`@${ctx.from.username}`] = ctx.data;
 					}
 				}
-			} catch (e) {
-				console.log(e)
+			} catch (error) {
+				console.log(error)
 			}
 		});
 	}
